@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Mini Reset */
+html,body,div,form,fieldset,legend,label{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+th,td{text-align:left;vertical-align:top}
+h1,h2,h3,h4,h5,h6,th,td,caption{font-weight:400;margin: 0px;}
+img{border:0}
+/* END CSS Mini Reset */
+
+body {
+	    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:14px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+	background-color: #404348;
+	background-image: linear-gradient(145deg, #131313, #404348);
+}
+.clear-fix {clear:both;}
+a {
+    color: #4B5;
+    text-decoration: none;
+}
+.selected {
+	color:#131313;
+}
+.selection {
+	height:54px;
+	width:100%;
+	display: inline-block;
+}
+/*ALBUMS*/
+#albums {
+	background-color:#131313;
+	/*text-align:center;
+	display: inline-block;*/
+    margin: 0px auto;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,45484d+100 */
+
+}
+.album{
+	color:#606060;
+	height:200px;
+	width:45%;
+	position:relative;
+	/*float: left;
+	padding: 8px 4px;*/
+	display: inline-block;
+	margin: 8px 2px;
+}
+.album p{
+	color:#ffffff;
+	font-size:small;
+    position: absolute;
+    bottom: 0px;
+	background-color:#333333;
+	height: 40px;
+ 	width:100%;
+	margin:0px;
+    padding: 4px 0px;
+	opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+#albums img{
+	height:200px;
+	width:100%;
+	object-fit: cover;
+	/*float: left;*/
+}
+/*SINGLES*/
+#singles {
+
+}
+.single-img {
+		width:100%;
+	object-fit: cover;
+}
+.single {
+	color:#333;
+background-color:#fff;
+margin:5px;
+
+}
+/*MENUE CODE*/
+#panel {
+	position: relative;
+    z-index: 1;
+	text-align: center;
+    /*padding-top: 5px;*/
+    min-height: 100%;
+	/*background-color: #131313*/;
+	color:#FFF;
+}
+.header {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,2c2c2c+50,000000+51,131313+100 */
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border-bottom: solid 2px #000;
+	background-color:#22252c;
+}
+.title {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+	margin: 24px 48px 0px 0px;
+	padding: 15px 0 15px 60px;  	
+}
+        .container {
+            max-width: 32rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+/*MAIN TOGGLE BUTTONS*/
+.click {
+	
+}
+.dark {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	background-color:#333;
+	float:left;
+	width:50%;
+	min-height: 100%;
+	font-weight:bold;
+	border-bottom: solid 2px #000;
+}
+.light {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#606060;
+	float:left;
+	width:50%;
+	min-height: 100%;
+	font-weight:bold;
+	border-bottom: solid 2px #e14658;
+}
+
+.panel-section{
+	margin-bottom:20px;
+}
+.toggle-button{
+    border: none;
+    position: absolute;
+    /*top: 15px;*/
+    left: 12px;
+    outline: none;
+	font-size: xx-large;
+    padding: 5px 10px;
+	/*color: inherit;
+    font: inherit;*/
+    margin: 0;
+}
+.header-button{
+    border: none;
+    position: absolute;
+    top: 12px;
+}
+.slideout-menu {
+  background-color: #1D1F20;
+  background-image: linear-gradient(145deg, #1D1F20, #404348);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+.fixed {
+  backface-visibility: hidden;
+  position: fixed;
+  z-index:2;
+  transition: transform 300ms ease;
+}
+
+.fixed-open {
+  transform: translate3d(256px, 0px, 0px);
+}
+#menu {
+    /*padding-top: 5px;*/
+	}
+.menu-header, .panel-header {
+	min-height:80px;
+    border-bottom: 1px solid #2a2d2f;
+	padding: 40px 0;
+	
+}
+.menu-header {
+	background: url('../img/skull48.png') no-repeat 15px 23px;
+}
+/*.menu-title {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 24px auto;
+    padding: 20px 0 20px 60px;
+    	
+}*/
+.menu-section{    
+	color:#FFF;
+}
+.menu-section ul{
+	padding: 0;
+    margin: 10px 0;
+    list-style: none;
+}
+.menu-section a {
+    color: #fff;
+	display: block;
+    padding: 10px 20px;
+}

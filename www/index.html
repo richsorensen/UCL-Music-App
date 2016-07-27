@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <link rel="stylesheet" href="css/APlayerMod.css">
+    <link rel="stylesheet" type="text/css" href="css/mobileMod.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/test.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+    <!--<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <!--<link rel="stylesheet" type="text/css" href="css/test.css" />-->
+    <!--NEED JQUERY FOR BUTTONS-->
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<title>UCL Moble App</title>
+</head>
+<body>
+    <nav class="menu-section" id="menu">
+      <h2 class="title">Menu</h2>
+		<ul>
+  		<li><a class="active" href="mobile.html">Home</a></li>
+  		<!--<li><a href="download.html">DOWNLOAD</a></li>-->
+  		<li><a href="#contact">Contact</a></li>
+  		<li><a href="#about">About</a></li>
+      	</ul>     
+	</nav>
+
+    <main id="panel">
+      <header class="header">
+        <button class="toggle-button">☰</button>
+        <h2 class="title">UCL MUSIC APP</h2>
+      </header>
+  
+<!--MY TOGGEL BUTTONS AND CONTAINER-->    
+      <div class="selection">
+      <div class="dark"><a href="javascript:SwapDivsWithClick('singles','albums')" class="click">ALBUMS</a></div>
+      <div class="light"><a href="javascript:SwapDivsWithClick('singles','albums')" class="click">SINGLES</a></div>
+      </div>
+<!--END TOGGEL BUTTONS--> 
+<!--**********ALBUMS or SINLGLES**********-->
+<!--ALBUM CONTAINER-->      
+<div id="albums" style="display:none;">
+    <div class="album"><img src="img/logo.png"><p>ALBUM TITLE</p></div>
+    <div class="album"><img src="img/test-img/REVOLUTION_CD_COVER.jpg"><p>ALBUM TITLE</p></div>
+    <div class="album"><img src="img/test-img/ico.jpg"><p>ALBUM TITLE</p></div>
+    <div class="album"><img src="img/cd_jday.png"><p>ALBUM TITLE</p></div>
+</div>
+<!--END ALBUM CONTAINER-->  
+
+<!--SINGLES CONTAINER-->  
+<div id="singles" style="display:block;"><img src="img/banner01.jpg" class="single-img">
+<div class="single">
+<div id="player1" class="aplayer">
+        <pre class="aplayer-lrc-content">
+			[00:00.00]
+			[00:00.40]<i>precarious silence...</i>
+			[00:04.40]
+			[00:04.41]<i>spooky drum beat...</i>
+			[00:13.59]
+			[00:13.60]Somebody wank me 
+			[00:15.40]cause I'm half ass
+			[00:17.10]DUUUUUUUMMM
+			[00:22.00]
+			[00:22.10]I am 'fraid of Quigley
+			[00:24.20]thing my tyme ass
+			[00:25.70]CU - uuuuu
+			[00:28.00]uhm.
+			[00:31.00]
+			[00:31.10]Somebody help me
+			[00:32.80]donut tire to spare...
+			[00:39.00]
+			[00:39.10]Desperate chicks
+			[00:40.30]
+			[00:40.40]and smellin
+			[00:41.70]
+			[00:41.80]underware
+			[00:47.40]
+			[00:47.51]BREAK
+			[00:49.50]
+			[00:49.71]THE CYCLE
+			[00:52.39]
+			[00:52.40]OF
+			[00:53.10]IN-
+			[00:54.10]IN-SAN-
+			[00:55.60]IN-SAN-TAs-
+			[00:56.70]SLIEEEGH!!!
+			[01:05.00]
+			[01:05.01]<a class="buy" href="http://uclmusic.com/" target="_blank">BUY THIS SONG</a>
+		</pre>
+</div>
+</div>
+
+<div class="single">
+<div id="player2" class="aplayer">
+        <pre class="aplayer-lrc-content">
+			[00:00.00]
+			[00:03.00]
+			[00:03.01]<i>Ahhhhhhhh</i>
+			[00:08.41]
+			[00:08.42]YEEAAAHHHH!!!
+			[00:13.60]
+			[00:15.40]
+			[00:17.10]
+			[00:22.00]
+			[00:22.10]
+			[00:24.20]
+			[00:25.70]
+			[00:28.00]
+			[00:31.00]
+			[00:31.10]
+			[00:32.80]
+			[00:39.00]
+			[00:39.10]
+			[00:40.30]
+			[00:40.40]
+			[00:41.70]
+			[00:41.80]
+			[00:47.40]
+			[00:47.51]
+			[00:49.50]
+			[00:49.71]
+			[00:52.39]
+			[00:52.40]
+			[00:53.10]
+			[00:54.10]
+			[00:55.60]
+			[00:56.70]
+			[01:05.00]
+			[01:05.01]<a class="buy" href="http://uclmusic.com/" target="_blank">BUY THIS SONG</a>
+		</pre>
+</div>
+</div>
+<script src="js/APlayer.min.js"></script>
+<script src="js/uclmusicplayer.js"></script>
+
+</div>
+<!--END SINGLES CONTAINER-->
+      
+</main>
+<!------------------------------------------------------>
+<!--END MAIN CONTENT PANEL-->
+
+<!--SWAP DIVS WITH A TOGGLE BUTTON-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $("a.click").click(function(){
+        $("div.dark,div.light").toggleClass("dark light");
+    });
+});
+function SwapDivsWithClick(albums,singles)
+{
+   d1 = document.getElementById(singles);
+   d2 = document.getElementById(albums);
+   if( d2.style.display == "none" )
+   {
+      d1.style.display = "none";
+      d2.style.display = "block";
+   }
+   else
+   {
+      d1.style.display = "block";
+      d2.style.display = "none";
+   }
+}
+</script>
+
+<!--SLIDER MENU-->
+<script src="js/slideout.js"></script>
+<script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+
+      // Toggle button
+      document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+    </script>
+    
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+
+
+<!--NEEDED FOR PHONEGAP-->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+        app.initialize();
+    </script>
+
+</body>
+
+</html>
